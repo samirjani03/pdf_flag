@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Text</title>
+    <style>
+        /* Remove default margins and padding */
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #1a1a1a; /* Dark background */
+            font-family: Arial, sans-serif;
+        }
+
+        /* Style the text container */
+        .centered-text {
+            color: #00ff9d; /* Neon green */
+            font-size: 48px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            animation: pulse 2s infinite;
+        }
+
+        /* Add pulsing animation effect */
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        /* Add hover effect */
+        .centered-text:hover {
+            text-shadow: 0 0 20px rgba(0, 255, 157, 0.5);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="centered-text">Can you find the pdf?</div>
+</body>
+</html>
